@@ -1,6 +1,6 @@
 {
   "name": "my-order-api",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "my-order-api",
   "main": "index.js",
   "private": true,
