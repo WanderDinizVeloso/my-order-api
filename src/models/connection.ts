@@ -1,4 +1,7 @@
+import dotenv from 'dotenv';
 import { Db, MongoClient } from 'mongodb';
+
+dotenv.config();
 
 const { URL, DB_NAME } = process.env;
 
