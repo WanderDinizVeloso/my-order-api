@@ -1,3 +1,14 @@
+## [1.2.0](https://github.com/WanderDinizVeloso/my-order-api/compare/1.1.0...1.2.0) (2023-09-02)
+
+
+### Features
+
+* add error middleware ([cf6dc92](https://github.com/WanderDinizVeloso/my-order-api/commit/cf6dc92aecdc5e618119090769290d20d5eef138))
+* add products routers in root router ([9841703](https://github.com/WanderDinizVeloso/my-order-api/commit/984170359acb234e0fed7ad36ba489c69b3cdda1))
+* create products controllers ([6f9a7f7](https://github.com/WanderDinizVeloso/my-order-api/commit/6f9a7f78df9f7f1ce3bfa9b2550e3bd7609aa23a))
+* create products routers ([56afce8](https://github.com/WanderDinizVeloso/my-order-api/commit/56afce8f2da8f745b70541fb08763cb630b33930))
+* create products services ([944c2b2](https://github.com/WanderDinizVeloso/my-order-api/commit/944c2b215162665a97f2abd57bf25727ecb9f117))
+
 ## [1.1.0](https://github.com/WanderDinizVeloso/my-order-api/compare/1.0.0...1.1.0) (2023-08-27)
 
 
