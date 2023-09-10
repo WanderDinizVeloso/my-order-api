@@ -1,13 +1,9 @@
-import { Document, ModifyResult, ObjectId } from 'mongodb';
+import { Document, ModifyResult } from 'mongodb';
 
 import { models } from '@/models';
+import { IId } from '@/interfaces';
 
 const { remove } = models('products');
 
-interface IProductsServiceRemove {
-  _id: string | ObjectId;
-}
-
-export const productsServiceRemove = async ({
-  _id,
-}: IProductsServiceRemove): Promise<ModifyResult<Document>> => remove(_id);
+export const productsServiceRemove = async ({ _id }: IId): Promise<ModifyResult<Document>> =>
+  remove(_id);

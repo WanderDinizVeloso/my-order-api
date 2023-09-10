@@ -1,17 +1,14 @@
-import { Document, ObjectId, WithId } from 'mongodb';
+import { Document, WithId } from 'mongodb';
 
+import { IProduct } from '@/interfaces';
 import { models } from '@/models';
+import { TId } from '@/types';
 
 const { update } = models('products');
 
-interface IUpdatePayload {
-  name?: string;
-  price?: number;
-}
-
 interface IProductsServiceUpdate {
-  _id: string | ObjectId;
-  payload: IUpdatePayload;
+  _id: TId;
+  payload: Partial<Omit<IProduct, '_id'>>;
 }
 
 export const productsServiceUpdate = async ({

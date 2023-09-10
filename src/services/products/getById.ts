@@ -1,13 +1,9 @@
-import { Document, ObjectId, WithId } from 'mongodb';
+import { Document, WithId } from 'mongodb';
 
+import { IId } from '@/interfaces';
 import { models } from '@/models';
 
 const { getById } = models('products');
 
-interface IProductsServiceGetById {
-  _id: string | ObjectId;
-}
-
-export const productsServiceGetById = async ({
-  _id,
-}: IProductsServiceGetById): Promise<WithId<Document> | null> => getById(_id);
+export const productsServiceGetById = async ({ _id }: IId): Promise<WithId<Document> | null> =>
+  getById(_id);
